@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./template.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Input Form</title>
+  </head>
+  <body>
+    <aside>
+      <ul class="side-icons">
+        <div class="up">
+          <li>
+            <a href="#">
+              <img
+                class="logo"
+                src="./assets/icons/hamburger-menu-svgrepo-com.svg"
+                alt="hamburger-icon"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="./assets/icons/dashboard.svg"
+                alt="dashboard-logo"
+                class="logo"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="./assets/icons/Productlist.svg"
+                alt="dashboard-logo"
+                class="logo"
+              />
+            </a>
+          </li>
+        </div>
+        <div class="down">
+          <li>
+            <a href="#">
+              <img
+                src="./assets/icons/logout.svg"
+                alt="dashboard-logo"
+                class="logo"
+              />
+            </a>
+          </li>
+        </div>
+      </ul>
+    </aside>
+    <header>
+      <ul class="header">
+        <div class="left">
+          <li>
+            <img
+              class="main-logo"
+              src="./assets/icons/logo.svg"
+              alt="logo-icon"
+            />
+          </li>
+        </div>
+        <div class="right">
+          <li>Admin</li>
+          <li>
+            <a href="#">
+              <img
+                class="logo"
+                src="./assets/icons/user-shield-alt-svgrepo-com.svg"
+                alt="user-icon"
+              />
+            </a>
+          </li>
+        </div>
+      </ul>
+    </header>
+
+    <main>
+      <div class="container">
+        <h2>Editing [Manhwa Name]</h2>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+          <div class="wrapper">
+            <div class="form-left">
+              <label for="title">Title:</label>
+              <input type="text" id="title" name="title" required />
+
+              <label for="chapters">Chapters:</label>
+              <input type="number" id="chapters" name="chapters" required />
+
+              <div class="radio-group">
+                <label>Type:</label>
+                <input type="radio" name="type" value="Type 1" required />
+                Manhwa <input type="radio" name="type" value="Type 2" /> Manga
+                <input type="radio" name="type" value="Type 3" /> Doujinshi
+              </div>
+
+              <label for="genre">Genre:</label>
+              <select id="genre" name="genre" required>
+                <option value="">Select Genre</option>
+                <option value="Fiction">Fiction</option>
+                <option value="Action">Action</option>
+                <option value="Isekai">Isekai</option>
+                <option value="Horror">Horror</option>
+                <option value="Slice of Life">Slice of Life</option>
+                <option value="Romance">Romance</option>
+                <option value="Shounen">Shounen</option>
+              </select>
+
+              <label for="author">Author:</label>
+              <input type="text" id="author" name="author" required />
+
+              <label for="language">Language:</label>
+              <input type="text" id="language" name="language" required />
+
+              <label>Availability:</label>
+              <input
+                type="radio"
+                name="availability"
+                value="Available"
+                required
+              />
+              Available
+              <input type="radio" name="availability" value="Not Available" />
+              Not Available
+              <label for="price">Price:</label>
+              <input type="number" id="price" name="price" required />
+            </div>
+            <div class="form-right">
+              <label for="coverImage">Cover Photo:</label>
+              <input
+                type="file"
+                id="coverImage"
+                name="coverImage"
+                class="photo-upload"
+                accept="image/*"
+              />
+
+              <label for="backImage">Main Photo:</label>
+              <br />
+              <input
+                type="file"
+                id="backImage"
+                name="backImage"
+                class="photo-upload"
+                accept="image/*"
+              />
+            </div>
+          </div>
+
+          <label for="synopsis">Synopsis:</label>
+          <textarea
+            id="synopsis"
+            name="synopsis"
+            rows="7"
+            cols="100"
+            required
+          ></textarea>
+
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>Copyright © 2012 - 2023 MangaFire®. All rights reserved.</footer>
+  </body>
+</html>

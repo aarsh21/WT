@@ -1,0 +1,157 @@
+:root {
+  --primary: #f1f6f9;
+  --secondary: hsl(219, 15%, 66%);
+  --backgroud: hsl(221, 31%, 19%);
+  --items: hsl(220, 29%, 31%);
+}
+
+*,
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: var(--backgroud);
+  color: var(--primary);
+}
+
+aside {
+  position: absolute;
+  width: 2em;
+  height: 100%;
+  z-index: 999;
+  margin: 0;
+  top: 2.3em;
+}
+
+li {
+  list-style: none;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 5px;
+}
+header {
+  border-bottom: 1px solid rgba(226, 235, 251, 0.2);
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: 5em;
+  border-bottom: 2px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  column-gap: 1em;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  column-gap: 2em;
+  align-items: center;
+}
+
+.main-logo {
+  width: 100px;
+  cursor: pointer;
+  height: 100px;
+}
+
+.side-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 40px;
+  gap: 3em;
+  align-items: center;
+}
+
+.up {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3em;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+.container {
+  background-color: var(--items);
+  margin-inline: 10em;
+  color: var(--primary);
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-weight: bold;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-left {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5em;
+}
+
+.form-right {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  width: 90%;
+  display: block;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+input[type="radio"] {
+  margin-right: 5px;
+}
+.radio-group label {
+  margin-right: 15px;
+}
+.photo-upload {
+  margin-bottom: 10px;
+}
+.submit-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid rgba(226, 235, 251, 0.2);
+  padding: 2em;
+}

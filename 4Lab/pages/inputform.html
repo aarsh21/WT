@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+
+    <title>Document</title>
+  </head>
+  <body class="text-black">
+    <nav class="navbar navbar-expand-lg border-bottom mb-3">
+      <div class="container-fluid align-items-center justify-content-center">
+        <a class="navbar-brand text-center" href="/pages/home.html">
+          <img
+            class="rounded-4 p- 2"
+            src="../assets/logo.png"
+            alt="logo"
+            height="80px"
+          />
+        </a>
+      </div>
+    </nav>
+
+    <aside class="d-flex flex-nowrap position-fixed top-0">
+      <div
+        class="d-flex flex-column flex-shrink-0 gap-5 bg-white rounded-bottom-4"
+        style="width: 4.5rem"
+      >
+        <ul
+          class="nav nav-pills nav-flush flex-column mb-auto text-center gap-5"
+        >
+          <li class="nav-item">
+            <a href="/pages/home.html" class="nav-link py-3 rounded-0">
+              <img src="../assets/feather/home.svg" alt="home" />
+            </a>
+          </li>
+          <li>
+            <a href="/pages/dashboard.html" class="nav-link py-3 rounded-0">
+              <img src="../assets/feather/clipboard.svg" alt="Dashboard" />
+            </a>
+          </li>
+          <li>
+            <a href="/pages/itemlist.html" class="nav-link py-3 rounded-0">
+              <img src="../assets/feather/file-text.svg" alt="List" />
+            </a>
+          </li>
+        </ul>
+        <div class="dropdown border-top">
+          <a
+            href="#"
+            class="d-flex align-items-center justify-content-center p-3 link-body-emphasis text-decoration-none dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img
+              src="https://github.com/mdo.png"
+              alt="mdo"
+              width="24"
+              height="24"
+              class="rounded-circle"
+            />
+          </a>
+          <ul class="dropdown-menu text-small shadow">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+    <main class="d-flex align-items-center justify-content-center">
+      <form class="p-5 bg-black text-white rounded-4 w-75">
+        <h1 class="mb-4">Add New Item</h1>
+        <div class="mb-3">
+          <label for="title" class="form-label">Title</label>
+          <input
+            type="text"
+            class="form-control"
+            id="title"
+            name="title"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="chapters" class="form-label">Chapters</label>
+          <input
+            type="number"
+            class="form-control"
+            id="chapters"
+            name="chapters"
+            min="1"
+            max="100"
+            step="1"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Genre</label><br />
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="genre[]"
+              id="genre1"
+              value="Adventure"
+            />
+            <label class="form-check-label" for="genre1">Adventure</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="genre[]"
+              id="genre2"
+              value="Romance"
+            />
+            <label class="form-check-label" for="genre2">Romance</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="genre[]"
+              id="genre3"
+              value="Science Fiction"
+            />
+            <label class="form-check-label" for="genre3">Science Fiction</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="genre[]"
+              id="genre4"
+              value="Slice Of Life"
+            />
+            <label class="form-check-label" for="genre4">Slice Of Life</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="genre[]"
+              id="genre5"
+              value="Shounen"
+            />
+            <label class="form-check-label" for="genre5">Shounen</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="genre[]"
+              id="genre6"
+              value="Gore"
+            />
+            <label class="form-check-label" for="genre6">Gore</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="genre[]"
+              id="genre7"
+              value="Action"
+            />
+            <label class="form-check-label" for="genre7">Action</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="genre[]"
+              id="genre8"
+              value="Isekai"
+            />
+            <label class="form-check-label" for="genre8">Isekai</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="genre[]"
+              id="genre9"
+              value="Time Travel"
+            />
+            <label class="form-check-label" for="genre9">Time Travel</label>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="author" class="form-label">Author</label>
+          <input
+            type="text"
+            class="form-control"
+            id="author"
+            name="author"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="language" class="form-label">Language</label>
+          <input
+            type="text"
+            class="form-control"
+            id="language"
+            name="language"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="availability" class="form-label">Availability</label
+          ><br />
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="availability"
+              id="available"
+              value="Available"
+              required
+            />
+            <label class="form-check-label" for="available">Available</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="availability"
+              id="not-available"
+              value="Not Available"
+              required
+            />
+            <label class="form-check-label" for="not-available"
+              >Not Available</label
+            >
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="cover-image" class="form-label">Cover Image</label>
+          <input
+            type="file"
+            class="form-control"
+            id="cover-image"
+            name="cover-image"
+            accept="image/*"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="pdf" class="form-label">Panel</label>
+          <input
+            type="file"
+            class="form-control"
+            id="pdf"
+            name="pdf"
+            accept=".pdf"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="synopsis" class="form-label">Synopsis</label>
+          <textarea
+            class="form-control"
+            id="synopsis"
+            name="synopsis"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="price" class="form-label">Price (USD)</label>
+          <input
+            type="number"
+            class="form-control"
+            id="price"
+            name="price"
+            min="0"
+            step="0.01"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-outline-light">Submit</button>
+      </form>
+    </main>
+
+    <footer class="text-center text-white py-3 mt-4 border-top">
+      <p class="m-0">Copyright © 2023 MangaFire. All rights reserved.</p>
+    </footer>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../bootstrap/bootstrap.bundle.js"></script>
+  </body>
+</html>

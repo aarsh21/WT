@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+
+    <title>Document</title>
+  </head>
+  <body class="text-black">
+    <nav class="navbar navbar-expand-lg">
+      <div
+        class="container-fluid align-items-center justify-content-center border-bottom"
+      >
+        <a class="navbar-brand text-center" href="#">
+          <img
+            class="p-3 rounded-4"
+            src="../assets/logo.png"
+            alt="logo"
+            height="100px"
+          />
+        </a>
+      </div>
+    </nav>
+    <main class="container">
+      <div class="row justify-content-center align-content-center rounded-5">
+        <div class="col-md-6">
+          <div class="card bg-black text-white">
+            <div class="card-header bg-black text-center">
+              <h1>Login</h1>
+            </div>
+            <div class="card-body">
+              <form
+                id="loginForm"
+                method="post"
+                action="#"
+                class="needs-validation"
+                novalidate
+              >
+                <div class="mb-3">
+                  <label for="username" class="form-label">Username</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="username"
+                    name="username"
+                    required
+                  />
+                  <div class="invalid-feedback">Please enter a username.</div>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+              
+                </div>
+              
+                <div class="mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    name="password"
+                    required
+                  />
+                  <div class="invalid-feedback">Please enter a valid password.</div>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+              
+                </div>
+                <button type="submit" class="btn btn-outline-light">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <?PHP
+include './footer.php';
+?>

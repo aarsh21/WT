@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Entire Webpage Layout using Tables</title>
+  </head>
+
+  <!-- Navbar using a table -->
+  <body>
+    <table cellspacing="0" cellpadding="10" width="100%" height="50px">
+      <tr align="left">
+        <td>
+          <span>
+            <img
+              src="/circle-heat-svgrepo-com.svg"
+              alt=""
+              width="30px"
+              height="30px"
+            />
+          </span>
+        </td>
+        <td>
+          <span>
+            <img
+              src="/computer-monitor-pc-svgrepo-com.svg"
+              alt=""
+              width="20px"
+              height="20px"
+              background="yellow"
+            />
+          </span>
+        </td>
+        <td align="left">
+          <a href="#home">Slimanga</a>
+        </td>
+        <td width="70%"></td>
+        <td align="right" cellpadding="20px">
+          <a href="#contact">Admin</a>
+        </td>
+        <td align="right">
+          <span>
+            <img
+              src="avatar-people-profile-svgrepo-com.svg"
+              alt=""
+              width="20px"
+              height="20px"
+            />
+          </span>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Main content and aside bar using a table -->
+    <table cellspacing="0" cellpadding="10" width="100%" height="600">
+      <tr>
+        <td width="5%">
+          <!-- Aside bar contnt -->
+          <div>
+            <img
+              src="avatar-people-profile-svgrepo-com.svg"
+              alt=""
+              width="20px"
+              height="20px"
+            />
+          </div>
+          <br /><br /><br /><br />
+          <div>
+            <img
+              src="avatar-people-profile-svgrepo-com.svg"
+              alt=""
+              width="20px"
+              height="20px"
+            />
+          </div>
+          <br /><br /><br /><br />
+          <div>
+            <img
+              src="avatar-people-profile-svgrepo-com.svg"
+              alt=""
+              width="20px"
+              height="20px"
+            />
+          </div>
+        </td>
+        <td>
+          <table border="1px" align="center">
+            <tr>
+              <td>
+                <form action="">
+                  <table cellpadding="10px">
+                    <tr>
+                      <td><label>Title:</label></td>
+                      <td><input type="text" /></td>
+                    </tr>
+                    <tr>
+                      <td><label>Chapters:</label></td>
+                      <td><input type="text" /></td>
+                    </tr>
+                    <tr>
+                      <td><label>Type:</label></td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="manga"
+                          name="fav_language"
+                          value="manga"
+                        />
+                        <label for="manga">manga</label><br />
+                        <input
+                          type="radio"
+                          id="manhwa"
+                          name="fav_language"
+                          value="manhwa"
+                        />
+                        <label for="manhwa">manhwa</label><br />
+                        <input
+                          type="radio"
+                          id="Dounjinshi"
+                          name="fav_language"
+                          value="Dounjinshi"
+                        />
+                        <label for="Dounjinshi">Dounjinshi</label><br />
+                      </td>
+                      <td rowspan="3">
+                        <input type="file" />
+                      </td>
+                      <td rowspan="3">
+                        <input type="file" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><label for="Mangas">Choose a Genre:</label></td>
+                      <td>
+                        <select name="Genre" id="Genre">
+                          <option value="sliceoflife">Slice of life</option>
+                          <option value="sci-fi">Sci-fi</option>
+                          <option value="isekai">Isekai</option>
+                          <option value="boys-love">Boys Love</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><label>Author:</label></td>
+                      <td><input type="text" /></td>
+                    </tr>
+                    <tr>
+                      <td><label>Language:</label></td>
+                      <td><input type="text" /></td>
+                    </tr>
+                    <tr>
+                      <td><label>Availability:</label></td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="available"
+                          name="fav_language"
+                          value="available"
+                        />
+                        <label for="available">inStock</label><br />
+                        <input
+                          type="radio"
+                          id="not-avai"
+                          name="fav_language"
+                          value="not-avai"
+                        />
+                        <label for="not-avai">outofStock</label><br />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><label>Price:</label></td>
+                      <td><input type="text" placeholder="$" /></td>
+                    </tr>
+                    <tr>
+                      <td><label>Sypnosis:</label></td>
+                      <td colspan="4">
+                        <textarea type="textarea" rows="10" cols="100">
+ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis beatae veritatis ullam magni praesentium vel quia non ea nostrum nesciunt hic eligendi, dignissimos repellat quo quidem earum labore, molestias corrupti unde ab dolorem. Id nihil dolores officiis porro neque officia dolor natus, molestias eligendi sapiente error voluptates? Sequi</textarea
+                        >
+                      </td>
+                    </tr>
+                  </table>
+                </form>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <br /><br /><br /><br />
+    <footer>
+      <table width="100%" align="center">
+        <tr>
+          <td align="center">Lorem ipsum dolor sit.</td>
+        </tr>
+      </table>
+    </footer>
+  </body>
+</html>

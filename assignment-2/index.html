@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Scraping</title>
+  </head>
+  <body>
+    <h1>Web Scraping</h1>
+    <form method="post" action="scrape.php">
+      <label for="url">Enter URL to Scrape:</label> <br />
+      <input class="url" type="text" name="url" id="url" required />
+      <br />
+      <input class="btn" type="submit" value="Scrape and Save Data" />
+    </form>
+  </body>
+</html>
+
+<style>
+    .btn{
+        width: 300px;
+        text-align: center;
+        padding: 2rem;
+        background-color: lightblue;
+        border-radius: 2rem;
+        border: none;
+    }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2rem;
+    background-color: #1f1f1f;
+    color: lightblue;
+  }
+  body h1 {
+    font-size: 4rem;
+  }
+  .url {
+    height: 4rem;
+    width: 800px;
+    background-color: #1f1f1f;
+    border-radius:1rem;
+    font-size: 1.4rem;
+    color: lightblue;
+    border: 2px solid lightpink;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+</style>
